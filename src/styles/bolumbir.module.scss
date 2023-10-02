@@ -1,0 +1,52 @@
+
+// BolumBir
+
+.bolumBir{
+    display: flex;
+   
+    width: 600px;
+    height: 600px;
+  
+    .items{
+      margin-top: 30px;
+      flex: 1;
+  
+      .fotograf{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+  
+        .resim{
+          height: 200px;
+          width: 250px; 
+          object-fit: cover;
+        }
+  
+        .date{
+  
+        }
+      }
+      .aciklama{
+  
+      }
+  
+  
+      .yanhaber{
+  
+        .header{
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .description{
+          font-size: 12px;
+        }
+        .date{
+          font-size: 12px;
+  
+        }
+      }
+    }
+  
+  }
