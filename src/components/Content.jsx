@@ -5,6 +5,7 @@ import SonHaberler from "./(sag)/SonHaberler";
 import BolumBir from "./BolumBir";
 import Gida from "./Gida";
 import Teknoloji from "./Teknoloji";
+import Yayinlar from "./(orta)/Yayinlar";
 const Content = () => {
   return (
     <div className="content">
@@ -18,7 +19,9 @@ const Content = () => {
           <Teknoloji />
         </div>
       </div>
-      <div className="orta">Orta</div>
+      <div className="orta">
+        <Yayinlar/>
+      </div>
       <div className="sag">
         <div>
           <Duyurular />

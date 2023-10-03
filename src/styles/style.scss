@@ -1,4 +1,9 @@
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilitie
+
+
 .body{
   margin: 0;
 }
@@ -154,7 +159,10 @@
   }
   .orta {
     flex: 2;
-    background-color: gold;
+    gap: 3px;
+    margin-right: 10px;
+    
+  
     //height: 570px;
   }
   .sag {
@@ -339,5 +347,32 @@
     h1{}
     .header{}
     .description{}
+  }
+}
+
+// Sol Kolon
+// Yayinlar
+
+.yayinlar{
+  align-items: center;
+  margin-bottom: 25px;
+
+  .yayinlar-baslik {
+    display: flex;
+    width: fit-content;
+    height: 40px;
+    color: white;
+    background-color: black;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .yayinlar-baslik-bottom {
+    border-bottom: 5px solid black;
+  }
+
+  img{
+    width: 100% ;
   }
 }
