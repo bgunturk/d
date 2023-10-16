@@ -1,0 +1,25 @@
+
+.Gida {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 10px;
+    cursor: pointer;
+
+    .resim{
+        
+        width: 260px;
+    }
+  
+    
+    .baslik{
+        border-bottom: 4px solid black;
+        margin-bottom: 5px;
+    }
+      .header{}
+      .description{}
+    
+  }
