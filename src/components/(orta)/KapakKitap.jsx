@@ -5,7 +5,7 @@ const KapakKitap = () => {
   return (
     <div className={styles.KapakKitap}>
         <img className={styles.kitap} src='https://istibhaber.com/kitap/BaharatKapak.png'/>
-        <span>Türkiye'nin Baharatları</span>
+        <span className={styles.yazi}>Türkiye'nin Baharatları</span>
     </div>
   )
 }

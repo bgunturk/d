@@ -1,0 +1,13 @@
+.haberler{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    .haber{
+        .resim{
+            width: 100%;
+        }
+        .baslik{}
+        .tarih{}
+        .devam{}
+    }
+}

@@ -1,9 +1,9 @@
 const Teknoloji = () => {
     return (
       
-          <div className="container">
+          <div className="Teknoloji">
               <img src=''/>
-              <h1>Teknoloji</h1>
+              <h1 className="baslik">Teknoloji</h1>
               <div className="header">Teknoloji</div>
               <div className="description">Teknoloji</div>
           </div>

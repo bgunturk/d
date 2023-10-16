@@ -2,10 +2,14 @@ import React from "react";
 import HaberSlider from "./HaberSlider";
 import Duyurular from "./(sag)/Duyurular";
 import SonHaberler from "./(sag)/SonHaberler";
-import BolumBir from "./BolumBir";
+import BolumBir from "./(sol)/BolumBir";
 import Gida from "./Gida";
 import Teknoloji from "./Teknoloji";
 import Yayinlar from "./(orta)/Yayinlar";
+import KapakKitap from "./(orta)/KapakKitap";
+import Haberler from "./(orta)/Haberler";
+import Yazarlar from "./(sag)/Yazarlar";
+
 const Content = () => {
   return (
     <div className="content">
@@ -14,13 +18,15 @@ const Content = () => {
           <HaberSlider />
           <BolumBir />
         </div>
-        <div>
+        <div className="solalt">
           <Gida />
           <Teknoloji />
         </div>
       </div>
       <div className="orta">
         <Yayinlar/>
+        <KapakKitap/>
+        <Haberler/>
       </div>
       <div className="sag">
         <div>
@@ -28,6 +34,9 @@ const Content = () => {
         </div>
         <div>
           <SonHaberler />
+        </div>
+        <div>
+          <Yazarlar />
         </div>
       </div>
     </div>

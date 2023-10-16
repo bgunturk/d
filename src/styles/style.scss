@@ -18,6 +18,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  .container{
+    margin: 0;
+    max-width: 1124px;
+    align-self: center;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+
 }
 //Kayan Yazı
 .bulten {
@@ -154,11 +164,18 @@
     flex-direction: column;
     .haber-slider {
       background-color: black;
-      max-width: 670px;
+      max-width: 560px;
+    }
+    .solalt{
+      display: flex;
+      width: 600px;
+      height: 600px;
+      margin-top: 20px;
     }
   }
   .orta {
     flex: 2;
+    flex-direction: column;
     gap: 3px;
     margin-right: 10px;
     
@@ -349,6 +366,18 @@
     .description{}
   }
 }
+.Teknoloji {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 30px;
+  .container{
+    h1{}
+    .header{}
+    .description{}
+  }
+}
+
 
 // Sol Kolon
 // Yayinlar

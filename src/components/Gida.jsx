@@ -1,7 +1,7 @@
 const Gida = () => {
   return (
     
-        <div className="container">
+        <div className="Gida">
             <img src=''/>
             <h1>Gida </h1>
             <div className="header">Gida </div>

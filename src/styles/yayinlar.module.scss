@@ -1,0 +1,24 @@
+
+.yayinlar{
+    align-items: center;
+    margin-bottom: 25px;
+  
+    .yayinlarbaslik {
+      display: flex;
+      width: fit-content;
+      height: 40px;
+      color: white;
+      background-color: black;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    
+    .yayinlarbaslikbottom {
+      border-bottom: 5px solid black;
+    }
+  
+    img{
+      width: 100% ;
+    }
+  }

@@ -19,8 +19,12 @@ export default function Home() {
       <div className="home">
         <Bulten/>
         <Navbar />
+        <div className="container">
+       
         <Content/>
         <Footer />
+        </div>
+        
       </div>
     </>
   );
