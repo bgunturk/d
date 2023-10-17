@@ -1,0 +1,98 @@
+import React from 'react'
+import styles from '../../styles/tab.module.scss'
+const Tab = () => {
+  return (
+    <div className={styles.contaimer}>
+        <div className={styles.bloctabs}>
+            <div className={styles.tabs}>Tab 1</div>
+            <div className={styles.tabs}>Tab 2</div>
+            <div className={styles.tabs}>Tab 3</div>
+        </div>
+
+        <div className={styles.contenttabs}>
+            <div className={styles.content}>
+            <img />
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default Tab
+
+/*
+'use client'
+import React, { useState } from 'react';
+
+const Tab = () => {
+
+    const [currentTab, setCurrentTab] = useState('1');
+    const tabs = [
+        {
+            id: 1,
+            tabTitle: 'DERGİ',
+            title: 'Title 1',
+            content: 'Las tabs se generan automáticamente a partir de un array de objetos, el cual tiene las propiedades: id, tabTitle, title y content.'
+        },
+        {
+            id: 2,
+            tabTitle: 'GAZETE',
+            title: 'Title 2',
+            content: 'Contenido de tab 2.'
+        },
+        {
+            id: 3,
+            tabTitle: 'KİTAP',
+            title: 'Title 3',
+            content: 'Contenido de tab 3.'
+        },
+       
+    ];
+
+    const handleTabClick = (e) => {
+        setCurrentTab(e.target.id);
+    }
+
+    return (
+        <div className='container'>
+            <div className='tabs'>
+                {tabs.map((tab, i) =>
+                    <button key={i} id={tab.id} disabled={currentTab === `${tab.id}`} onClick={(handleTabClick)}>{tab.tabTitle}</button>
+                )}
+            </div>
+            <div className='content'>
+                {tabs.map((tab, i) =>
+                    <div key={i}>
+                        {currentTab === `${tab.id}` && <div><p className='title'>{tab.title}</p><p>{tab.content}</p></div>}
+                    </div>
+                )}
+            </div>
+        </div>
+    );
+}
+
+export default Tab;
+
+*/
+
+
+
+/*
+ import React from 'react'
+import styles from '../../styles/tab.module.scss'
+const Tab = () => {
+  return (
+    <div className={styles.contaimer}>
+     <div className={styles.bloc-tabs}>
+            <div className={styles.tabs}>Tab 1</div>
+            <div className={styles.tabs}>Tab 2</div>
+            <div className={styles.tabs}>Tab 3</div>
+        </div>
+
+        <div className={styles.content-tabs}></div>
+    </div>
+  )
+}
+
+export default Tab
+*/

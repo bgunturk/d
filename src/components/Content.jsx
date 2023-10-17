@@ -1,6 +1,6 @@
 import React from "react";
 import HaberSlider from "./HaberSlider";
-import Duyurular from "./(sag)/Duyurular";
+import Tab from "./(sag)/Tab";
 import SonHaberler from "./(sag)/SonHaberler";
 import BolumBir from "./(sol)/BolumBir";
 import Gida from "./Gida";
@@ -30,7 +30,7 @@ const Content = () => {
       </div>
       <div className="sag">
         <div>
-          <Duyurular />
+          <Tab />
         </div>
         <div>
           <SonHaberler />
