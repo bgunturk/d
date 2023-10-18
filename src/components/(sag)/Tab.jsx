@@ -1,17 +1,43 @@
-import React from 'react'
-import styles from '../../styles/tab.module.scss'
+'use client'
+import {useState} from 'react'
+import styles from '@/styles/tab.module.scss'
 const Tab = () => {
+
+    const [toggleState, setToggleState] = useState(1);
+
+    const toggleTab = (index) => {
+        console.log("index")
+    }
+
   return (
-    <div className={styles.contaimer}>
+    <div className={styles.container}>
         <div className={styles.bloctabs}>
-            <div className={styles.tabs}>Tab 1</div>
-            <div className={styles.tabs}>Tab 2</div>
-            <div className={styles.tabs}>Tab 3</div>
+            <div onClick={() => {toggleTab(1)}} className={styles.tabs}>DERGİ</div>
+            <div className={styles.tabs}>GAZETE</div>
+            <div className={styles.tabs}>KİTAP</div>
         </div>
 
         <div className={styles.contenttabs}>
             <div className={styles.content}>
-            <img />
+                <img className={styles.resim} src='https://istib.org.tr/dosyalar/edergi/temmuz-agustos.jpg'/>
+                <div className={styles.icerik}>
+                    <h3>Baslık1</h3>
+                    <div>Acıklama</div>
+                </div>
+            </div>
+            <div className={styles.content}>
+                <img className={styles.resim}/>
+                <div>
+                    <h3>Baslık2</h3>
+                    <div>Acıklama</div>
+                </div>
+            </div>
+            <div className={styles.content}>
+                <img className={styles.resim}/>
+                <div>
+                    <h3>Baslık3</h3>
+                    <div>Acıklama</div>
+                </div>
             </div>
         </div>
     </div>

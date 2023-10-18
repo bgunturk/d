@@ -1,7 +1,7 @@
 import React from "react";
 import HaberSlider from "./HaberSlider";
 import Tab from "./(sag)/Tab";
-import SonHaberler from "./(sag)/SonHaberler";
+
 import BolumBir from "./(sol)/BolumBir";
 import Gida from "./Gida";
 import Teknoloji from "./Teknoloji";
@@ -9,6 +9,7 @@ import Yayinlar from "./(orta)/Yayinlar";
 import KapakKitap from "./(orta)/KapakKitap";
 import Haberler from "./(orta)/Haberler";
 import Yazarlar from "./(sag)/Yazarlar";
+import BasindaBiz from "./(sag)/BasindaBiz";
 
 const Content = () => {
   return (
@@ -33,7 +34,7 @@ const Content = () => {
           <Tab />
         </div>
         <div>
-          <SonHaberler />
+          <BasindaBiz />
         </div>
         <div>
           <Yazarlar />

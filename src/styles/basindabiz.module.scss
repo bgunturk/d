@@ -1,0 +1,40 @@
+.saghaber{
+    margin-top: 30px;
+    .haberbaslik{
+        display: flex;
+        width: max-content;
+        height: 40px;
+        color: white;
+        background-color: black;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .haberbaslikbottom{
+        border-bottom: 5px solid black;
+    }
+    .fotograflar{
+        .fotograf{}
+    }
+}
+
+
+/*
+.haber-item-1 {
+  margin-top: -3px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  a {
+    cursor: pointer;
+    &:hover {
+      color: red;
+    }
+  }
+}
+*/

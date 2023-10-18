@@ -243,55 +243,6 @@
   gap: 5px;
 }
 
-.sag-haber {
-  margin-top: 30px;
-}
-.haber-baslik {
-  display: flex;
-  width: max-content;
-  height: 40px;
-  color: white;
-  background-color: black;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.haber-baslik-bottom {
-  border-bottom: 5px solid black;
-}
-.haber-item {
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: white;
-  border-top: 1px solid #e4e4e4;
-}
-.haber-item-1 {
-  margin-top: -3px;
-  padding-left: 20px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 5px;
-  a {
-    cursor: pointer;
-    &:hover {
-      color: red;
-    }
-  }
-}
-.haber-item-1-1 {
-  display: flex;
-  gap: 5px;
-}
-
-
-
 
 // BolumBir
 
@@ -299,11 +250,12 @@
   display: flex;
  
   width: 600px;
-  height: 600px;
+  
 
   .items{
     margin-top: 30px;
     flex: 1;
+    text-align: left;
 
     .fotograf{
       display: flex;
@@ -330,7 +282,7 @@
   .items2{
     display: flex;
     flex-direction: column;
-    align-items: left;
+    text-align: left;
     flex: 1;
     margin-top: 30px;
     .yanHaber{
