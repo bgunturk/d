@@ -55,6 +55,7 @@
   padding-bottom: 20px;
   align-self: center;
   width: 95%;
+  max-width: 1124px;
   text-align: center;
   background-color: white;
   color: white;
@@ -199,107 +200,23 @@
 
 //SAĞ KOLON
 
-.duyuru-baslik {
-  display: flex;
-  width: fit-content;
-  height: 40px;
-  color: white;
-  background-color: black;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
-.duyuru-baslik-bottom {
-  border-bottom: 5px solid black;
-}
-.duyuru-item {
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: white;
-  border-top: 1px solid #e4e4e4;
-}
-.duyuru-item-1 {
-  margin-top: -3px;
-  padding-left: 20px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 5px;
-  a {
-    cursor: pointer;
-    &:hover {
-      color: red;
-    }
-  }
-}
-.duyuru-item-1-1 {
-  display: flex;
-  gap: 5px;
-}
+// .duyuru-item-1 {
+//   margin-top: -3px;
+//   padding-left: 20px;
+//   padding-right: 10px;
+//   padding-bottom: 5px;
+//   text-align: left;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   gap: 5px;
+//   a {
+//     cursor: pointer;
+//     &:hover {
+//       color: red;
+//     }
+//   }
+// }
 
 
-// BolumBir
-
-.bolumBir{
-  display: flex;
- 
-  width: 600px;
-  
-
-  .items{
-    margin-top: 30px;
-    flex: 1;
-    text-align: left;
-
-    .fotograf{
-      display: flex;
-      gap: 20px;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-
-      .resim{
-        height: 120px;
-        width: 90%; 
-        object-fit: cover;
-      }
-
-      .date{
-
-      }
-    }
-    .aciklama{
-
-    }
-  }
-
-  .items2{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    flex: 1;
-    margin-top: 30px;
-    .yanHaber{
-      margin-bottom: 5px;
-      border-bottom: 1px solid black;
-      .header{
-        font-size: 16px;
-        font-weight: 600;
-      }
-      .description{
-        font-size: 12px;
-      }
-      .date{
-        font-size: 12px;
-
-      }
-    }
-  }
-
-}

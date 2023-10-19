@@ -14,7 +14,15 @@
         border-bottom: 5px solid black;
     }
     .fotograflar{
-        .fotograf{}
+        .fotograf{
+            cursor: pointer;
+            padding: 5px 3px;
+            width: 130px;
+            &:hover {
+                opacity: 0.5 ;
+              }
+        }
+       
     }
 }
 

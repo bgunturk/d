@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import {useState} from 'react'
 import styles from '@/styles/tab.module.scss'
 const Tab = () => {
@@ -6,39 +6,67 @@ const Tab = () => {
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
-        console.log("index")
+        setToggleState(index)
     }
 
   return (
     <div className={styles.container}>
         <div className={styles.bloctabs}>
             <div onClick={() => {toggleTab(1)}} className={styles.tabs}>DERGİ</div>
-            <div className={styles.tabs}>GAZETE</div>
-            <div className={styles.tabs}>KİTAP</div>
+            <div onClick={() => {toggleTab(2)}} className={styles.tabs}>GAZETE</div>
+            <div onClick={() => {toggleTab(3)}} className={styles.tabs}>KİTAP</div>
         </div>
 
-        <div className={styles.contenttabs}>
+        <div className={toggleState == 1 ? styles.contenttabsactive : styles.contenttabs}>
             <div className={styles.content}>
                 <img className={styles.resim} src='https://istib.org.tr/dosyalar/edergi/temmuz-agustos.jpg'/>
                 <div className={styles.icerik}>
-                    <h3>Baslık1</h3>
-                    <div>Acıklama</div>
+                    <h3>Temmuz-Agustos 2023</h3>
+                    <div>Istib Temmuz Agustos…</div>
                 </div>
             </div>
             <div className={styles.content}>
-                <img className={styles.resim}/>
-                <div>
-                    <h3>Baslık2</h3>
-                    <div>Acıklama</div>
+                <img className={styles.resim} src='https://istib.org.tr/dosyalar/edergi/temmuz-agustos.jpg'/>
+                <div className={styles.icerik}>
+                    <h3>Mayis-Haziran 2023</h3>
+                    <div className={styles.aciklama} >Istib Mayis Haziran…</div>
+                </div>
+            </div>
+        </div>
+
+        <div className={toggleState == 2 ? styles.contenttabsactive : styles.contenttabs}>
+            <div className={styles.content}>
+                <img className={styles.resim} src='https://istib.org.tr/dosyalar/egazete/istibhaber-temmuz2023.png'/>
+                <div className={styles.icerik}>
+                    <h3>Temmuz Sayisi</h3>
+                    <div></div>
                 </div>
             </div>
             <div className={styles.content}>
-                <img className={styles.resim}/>
-                <div>
-                    <h3>Baslık3</h3>
-                    <div>Acıklama</div>
+                <img className={styles.resim} src='https://istib.org.tr/dosyalar/egazete/istibhaber-haziran2023.png'/>
+                <div className={styles.icerik}>
+                    <h3>Haziran Sayısı</h3>
+                    <div className={styles.aciklama} ></div>
                 </div>
             </div>
+           
+        </div>
+        <div className={toggleState == 3 ? styles.contenttabsactive : styles.contenttabs}>
+            <div className={styles.content}>
+                <img className={styles.resim} src='https://istibhaber.com/kitap/BMSK%202022%20Kapak.png'/>
+                <div className={styles.icerik}>
+                    <h3>BORSA MEYDANINDA SEKTÖRLER KONUŞUYOR…</h3>
+                    <div></div>
+                </div>
+            </div>
+            <div className={styles.content}>
+                <img className={styles.resim} src='https://istibhaber.com/kitap/BaharatKapak.png'/>
+                <div className={styles.icerik}>
+                    <h3>Türkiye'nin Baharatları</h3>
+                    <div className={styles.aciklama} ></div>
+                </div>
+            </div>
+           
         </div>
     </div>
   )

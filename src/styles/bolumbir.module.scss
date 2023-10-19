@@ -1,52 +1,58 @@
 
-// BolumBir
-
 .bolumBir{
-    display: flex;
-   
-    width: 600px;
-    height: 600px;
+  display: flex;
+ 
+  width: 600px;
   
-    .items{
-      margin-top: 30px;
-      flex: 1;
-  
-      .fotograf{
-        display: flex;
-        gap: 20px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-  
-        .resim{
-          height: 200px;
-          width: 250px; 
-          object-fit: cover;
-        }
-  
-        .date{
-  
-        }
+
+  .items{
+    margin-top: 30px;
+    flex: 1;
+    text-align: left;
+
+    .fotograf{
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      .resim{
+        height: 120px;
+        width: 90%; 
+        object-fit: cover;
       }
-      .aciklama{
-  
-      }
-  
-  
-      .yanhaber{
-  
-        .header{
-          font-size: 16px;
-          font-weight: 600;
-        }
-        .description{
-          font-size: 12px;
-        }
-        .date{
-          font-size: 12px;
-  
-        }
+
+      .date{
+
       }
     }
-  
+    .aciklama{
+
+    }
   }
+
+  .items2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex: 1;
+    margin-top: 30px;
+    .yanHaber{
+      margin-bottom: 5px;
+      border-bottom: 1px solid black;
+      .header{
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .description{
+        font-size: 12px;
+      }
+      .date{
+        font-size: 12px;
+
+      }
+    }
+  }
+
+}

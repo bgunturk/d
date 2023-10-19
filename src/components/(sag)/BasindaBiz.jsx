@@ -7,10 +7,10 @@ const BasindaBiz = () => {
       <div className={styles.haberbaslik}>BASINDA BİZ</div>
       <div className={styles.haberbaslikbottom}></div>
       <div className={styles.fotograflar}>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <img className={styles.fotograf} src="https://istibhaber.com/kitap/2.jpg" alt="" />
+        <img className={styles.fotograf} src="https://istibhaber.com/kitap/2.jpg" alt="" />
+        <img className={styles.fotograf} src="https://istibhaber.com/kitap/2.jpg" alt="" />
+        <img className={styles.fotograf} src="https://istibhaber.com/kitap/2.jpg" alt="" />
       </div>
     </div>
   );
