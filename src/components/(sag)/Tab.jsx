@@ -12,23 +12,23 @@ const Tab = () => {
   return (
     <div className={styles.container}>
         <div className={styles.bloctabs}>
-            <div onClick={() => {toggleTab(1)}} className={styles.tabs}>DERGİ</div>
-            <div onClick={() => {toggleTab(2)}} className={styles.tabs}>GAZETE</div>
-            <div onClick={() => {toggleTab(3)}} className={styles.tabs}>KİTAP</div>
+            <div onClick={() => {toggleTab(1)}} className={toggleState == 1 ? styles.selectedTab : styles.tabs}>DERGİ</div>
+            <div onClick={() => {toggleTab(2)}} className={toggleState == 2 ? styles.selectedTab : styles.tabs}>GAZETE</div>
+            <div onClick={() => {toggleTab(3)}} className={toggleState == 3 ? styles.selectedTab : styles.tabs}>KİTAP</div>
         </div>
 
         <div className={toggleState == 1 ? styles.contenttabsactive : styles.contenttabs}>
             <div className={styles.content}>
                 <img className={styles.resim} src='https://istib.org.tr/dosyalar/edergi/temmuz-agustos.jpg'/>
                 <div className={styles.icerik}>
-                    <h3>Temmuz-Agustos 2023</h3>
+                    <h4>Temmuz-Agustos 2023</h4>
                     <div>Istib Temmuz Agustos…</div>
                 </div>
             </div>
             <div className={styles.content}>
                 <img className={styles.resim} src='https://istib.org.tr/dosyalar/edergi/temmuz-agustos.jpg'/>
                 <div className={styles.icerik}>
-                    <h3>Mayis-Haziran 2023</h3>
+                    <h4>Mayis-Haziran 2023</h4>
                     <div className={styles.aciklama} >Istib Mayis Haziran…</div>
                 </div>
             </div>
@@ -38,14 +38,14 @@ const Tab = () => {
             <div className={styles.content}>
                 <img className={styles.resim} src='https://istib.org.tr/dosyalar/egazete/istibhaber-temmuz2023.png'/>
                 <div className={styles.icerik}>
-                    <h3>Temmuz Sayisi</h3>
+                    <h4>Temmuz Sayisi Sayısı</h4>
                     <div></div>
                 </div>
             </div>
             <div className={styles.content}>
                 <img className={styles.resim} src='https://istib.org.tr/dosyalar/egazete/istibhaber-haziran2023.png'/>
                 <div className={styles.icerik}>
-                    <h3>Haziran Sayısı</h3>
+                    <h4>Haziran Sayısı</h4>
                     <div className={styles.aciklama} ></div>
                 </div>
             </div>
@@ -55,15 +55,15 @@ const Tab = () => {
             <div className={styles.content}>
                 <img className={styles.resim} src='https://istibhaber.com/kitap/BMSK%202022%20Kapak.png'/>
                 <div className={styles.icerik}>
-                    <h3>BORSA MEYDANINDA SEKTÖRLER KONUŞUYOR…</h3>
-                    <div></div>
+                    <h4>Borsa Meydanında sektörler konuşuyor.</h4>
+                    <div className={styles.aciklama}></div>
                 </div>
             </div>
             <div className={styles.content}>
                 <img className={styles.resim} src='https://istibhaber.com/kitap/BaharatKapak.png'/>
                 <div className={styles.icerik}>
-                    <h3>Türkiye'nin Baharatları</h3>
-                    <div className={styles.aciklama} ></div>
+                    <h4>Türkiye'nin Baharatları</h4>
+                    <div className={styles.aciklama}></div>
                 </div>
             </div>
            
@@ -71,6 +71,9 @@ const Tab = () => {
     </div>
   )
 }
+
+
+
 
 export default Tab
 

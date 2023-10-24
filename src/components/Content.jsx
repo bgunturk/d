@@ -10,6 +10,7 @@ import KapakKitap from "./(orta)/KapakKitap";
 import Haberler from "./(orta)/Haberler";
 import Yazarlar from "./(sag)/Yazarlar";
 import BasindaBiz from "./(sag)/BasindaBiz";
+import YoutubeEkran from "./(orta)/YoutubeEkran";
 
 const Content = () => {
   return (
@@ -28,6 +29,7 @@ const Content = () => {
         <Yayinlar/>
         <KapakKitap/>
         <Haberler/>
+        <YoutubeEkran/>
       </div>
       <div className="sag">
         <div>

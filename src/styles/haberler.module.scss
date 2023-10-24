@@ -1,13 +1,27 @@
 .haberler{
     display: flex;
+    
     flex-direction: column;
     margin-top: 25px;
     .haber{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
         .resim{
             width: 100%;
         }
-        .baslik{}
-        .tarih{}
-        .devam{}
+        .baslik{
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .tarih{
+            margin-top: 5px;
+            font-size: 10px;
+            
+        }
+        
     }
 }

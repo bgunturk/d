@@ -1,7 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
-import youtube from '../../public/youtube.svg'
+import Twitter from '../../public/twitter.svg'
+import Instagram from '../../public/instagram.svg'
+import Linkedin from '../../public/linkedin.svg'
+import Facebook from '../../public/facebook.svg'
+import Youtube from '../../public/youtube.svg'
+
+
 import styles from '@/styles/footer.module.scss'
 //"../../public/youtube.svg"
 const Footer = () => {
@@ -57,7 +63,11 @@ const Footer = () => {
             <Link href={icon.url}><Image width={48} height={48} src={icon.icon} alt=""/></Link>
           ))
         } */}
-      <Link className={styles.link} href="https://www.youtube.com/channel/UCLgS_FDR538H02ckD25FgmA"><Image src={youtube} alt=""/></Link>     
+      <Link className={styles.link} href="https://www.youtube.com/channel/UCLgS_FDR538H02ckD25FgmA"><Image width={38} height={38} src={Youtube} alt=""/></Link>     
+      <Link className={styles.link} href="https://twitter.com/istib1924?lang=en"><Image width={38} height={38} src={Twitter} alt=""/></Link>     
+      <Link className={styles.link} href="https://www.instagram.com/istanbulticaretborsasi/?hl=en"><Image width={38} height={38} src={Instagram} alt=""/></Link>     
+      <Link className={styles.link} href="https://www.facebook.com/istib1924/?locale=tr_TR"><Image width={38} height={38} src={Facebook} alt=""/></Link>     
+      <Link className={styles.link} href="https://www.linkedin.com/company/istib1924/?originalSubdomain=tr"><Image width={38} height={38} src={Linkedin} alt=""/></Link>     
 
       </div>
     </div>

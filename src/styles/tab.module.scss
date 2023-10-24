@@ -1,6 +1,7 @@
 .container{
     border: 0.5px solid grey;
-    
+    overflow: hidden;
+
     .bloctabs{
         display: flex;
             flex-direction: row;
@@ -11,7 +12,19 @@
             align-items: center;
             justify-content: space-between;
             padding: 10px 20px;
-            background-color: azure;
+            background-color: rgb(217, 219, 238);
+            &:hover {
+                background-color: white;
+               // opacity: 0.3 ;
+              }
+        }
+        .selectedTab{
+            cursor: pointer;
+            border: 0.5px solid grey;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color:white;
             &:hover {
                 background-color: white;
                // opacity: 0.3 ;
@@ -35,13 +48,18 @@
         width: 100%;
         height: 100%;
         cursor: pointer;
+        
         //display: none;
         .resim{
             width: 80px;
         }
         .icerik{
-            h3{
-
+            
+            margin-right: 10px;
+            margin-left: 3px;
+            h4{
+                margin-right: 3px;
+                margin-left: 3px;
             }
             .aciklama{}
         }
